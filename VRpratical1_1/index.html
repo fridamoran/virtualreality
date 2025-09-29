@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box wireframe="true" position="0 .5 -1" length=" 2" height="1 " depth="2" color="#4CC3D9">
+      <!-- Body -->
+        <a-box length="2" depth="2" height=".5" color="pink"></a-box>
+        <a-box position="0 .5 -.25" length="2" depth="1.5" height=".5" color="pink"></a-box>
+        <a-box position="0 .32 .56" width="0.99" depth=".69" height=".5" rotation="45 0 0"></a-box>
+      <!-- Wheels-->
+        <a-torus position=".59 -.1 .7" radius=".1" radius-tubular="0.04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position="-.59 -.1 .7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position="-.59 -.1 -.7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position=".59 -.1 -.7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+      <!-- Lights -->
+        <a-cylinder position=".3 0 .959 " height=".1" radius=".1" rotation="90 0 0"></a-cylinder> 
+        <a-cylinder position="-.3 0 .959 " height=".1" radius=".1" rotation="90 0 0"></a-cylinder>     
+      </a-box>
+
+      <a-box wireframe="true" position="0 .5 1.5"  rotation="0 -46 0" length=" 2" height="1 " depth="2" color="#4CC3D9">
+      <!-- Body -->
+        <a-box length="2" depth="2" height=".5" color="pink"></a-box>
+        <a-box position="0 .5 -.25" length="2" depth="1.5" height=".5" color="pink"></a-box>
+        <a-box position="0 .32 .56" width="0.99" depth=".69" height=".5" rotation="45 0 0"></a-box>
+      <!-- Wheels-->
+        <a-torus position=".59 -.1 .7" radius=".1" radius-tubular="0.04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position="-.59 -.1 .7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position="-.59 -.1 -.7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+        <a-torus position=".59 -.1 -.7" radius="0.1" radius-tubular=".04" rotation="0 90 0" color="black"> </a-torus>
+      <!-- Lights -->
+        <a-cylinder position=".3 0 .959 " height=".1" radius=".1" rotation="90 0 0"></a-cylinder> 
+        <a-cylinder position="-.3 0 .959 " height=".1" radius=".1" rotation="90 0 0"></a-cylinder>     
+      </a-box>
+      <!-- Road -->
+      <a-box position="0 0 0" width="2.5" height="0.02" depth="6" color="black"></a-box>
+
+      <!-- Road center dashed lines -->
+      <a-box position="0 0.01 0" width="0.2" height="0.02" depth="1" color="white"></a-box>
+      <a-box position="0 0.01 2" width="0.2" height="0.02" depth="1" color="white"></a-box>
+      <a-box position="0 0.01 -2" width="0.2" height="0.02" depth="1" color="white"></a-box>
+
+      <!-- Trees (right side) -->
+      <a-box position="-2 0.75 -1" wireframe="true" height="1.5"> 
+        <a-cylinder position="0 0 0" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+        <a-sphere position="0 .75 0" radius="0.6" color="#228B22"></a-sphere>
+      </a-box>
+      <a-box position="2 0.75 1" wireframe="true" height="1.5"> 
+        <a-cylinder position="0 0 0" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+        <a-sphere position="0 .75 0" radius="0.6" color="#228B22"></a-sphere>
+      </a-box>
+      <a-box position="2 0.75 -1" wireframe="true" height="1.5"> 
+        <a-cylinder position="0 0 0" radius="0.1" height="1.5" color="#8B4513"></a-cylinder>
+        <a-sphere position="0 .75 0" radius="0.6" color="#228B22"></a-sphere>
+      </a-box>
+
+      <!-- Bushes -->
+      <a-sphere position="-2 0.3 1.5" radius="0.4" color="#2E8B57"></a-sphere>
+      <a-sphere position="-2.4 0.3 1.7" radius="0.3" color="#2E8B57"></a-sphere>
+      <a-sphere position="-1.7 0.3 1.6" radius="0.3" color="#2E8B57"></a-sphere>
+
+      <a-sphere position="2 0.3 -1.5" radius="0.4" color="#2E8B57"></a-sphere>
+      <a-sphere position="2.4 0.3 -1.7" radius="0.3" color="#2E8B57"></a-sphere>
+      <a-sphere position="1.7 0.3 -1.6" radius="0.3" color="#2E8B57"></a-sphere>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="6" height="6" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
